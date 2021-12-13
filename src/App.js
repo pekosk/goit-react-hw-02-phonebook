@@ -7,11 +7,12 @@ class App extends Component {
 
   state = {
     contacts: [],
-    name: ''
+    name: '',
+    number: '',
   };
 
 render() {
-  const { contacts, name } = this.state;
+  const { contacts, name, number } = this.state;
   return (
     <>
     <Section title="Phonebook">
