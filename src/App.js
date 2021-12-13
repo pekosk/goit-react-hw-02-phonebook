@@ -1,25 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react';
+import Section from './components/Section';
+import Form from './components/Form';
 
-function App() {
+class App extends Component {
+
+  state = {
+    contacts: [],
+    name: ''
+  };
+
+render() {
+  const { contacts, name } = this.state;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Section title="Phonebook">
+     <Form />
+    </Section>
+    <Section title="Contacts">
+      
+    </Section>
+    </>
   );
 }
+}
+
 
 export default App;
