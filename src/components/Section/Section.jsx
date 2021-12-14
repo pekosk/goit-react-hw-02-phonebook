@@ -1,5 +1,6 @@
 import styles from "./Section.module.css";
 import PropTypes from "prop-types";
+import shortid from "shortid";
 
 const Section = ({ title, children }) => {
   return (
