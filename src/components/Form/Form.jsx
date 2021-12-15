@@ -33,7 +33,7 @@ class Form extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.handleSubmit} className={styles.form}>
+        <form onSubmit={this.handleSubmit} className={styles.addForm}>
           <label className={styles.label} htmlFor={this.nameRandomId}>
             Name:
             <input
