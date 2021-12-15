@@ -1,5 +1,5 @@
 import styles from "./Form.module.css";
-import PropTypes, { number } from "prop-types";
+import PropTypes from "prop-types";
 import shortid from "shortid";
 import React, { Component } from 'react';
 
@@ -33,7 +33,7 @@ class Form extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.handleSubmit} className={s.form}>
+        <form onSubmit={this.handleSubmit} className={styles.form}>
           <label className={styles.label} htmlFor={this.nameRandomId}>
             Name:
             <input
