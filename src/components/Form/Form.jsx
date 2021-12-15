@@ -1,6 +1,6 @@
 import styles from "./Form.module.css";
 import PropTypes from "prop-types";
-import shortid from "shortid";
+import {nanoid} from "nanoid";
 import React, { Component } from 'react';
 
 
@@ -11,8 +11,8 @@ class Form extends Component {
     number: "",
   };
 
-  nameRandomId = shortid.generate();
-  numberRandomId = shortid.generate();
+  nameRandomId = nanoid();
+  numberRandomId = nanoid();
 
   handleChange = (e) => {
     const { name, value } = e.currentTarget;

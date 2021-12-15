@@ -1,6 +1,6 @@
 import './App.css';
 import React, { Component } from 'react';
-import shortid from "shortid";
+import { nanoid } from "nanoid";
 import Section from './components/Section';
 import Form from './components/Form';
 import Contacts from './components/Contacts';
@@ -19,7 +19,7 @@ class App extends Component {
 
   addContact = (data) => {
     const contact = {
-      id: shortid.generate(),
+      id: nanoid(),
       name: data.name,
       number: data.number,
     };
