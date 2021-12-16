@@ -11,4 +11,6 @@
     background-color: teal;
 }
 
-.input {}
+.contactItem {
+    margin-bottom: 5px;
+}
