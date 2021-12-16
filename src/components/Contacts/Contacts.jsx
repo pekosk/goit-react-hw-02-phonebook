@@ -19,7 +19,7 @@ const Contacts = ({ contacts, onDelete }) => {
 }
 
 Contacts.propTypes = {
-    contacts: PropTypes.shape({
+    contact: PropTypes.shape({
         id: PropTypes.number.isRequired,
         name: PropTypes.string.isRequired,
         number: PropTypes.number.isRequired,

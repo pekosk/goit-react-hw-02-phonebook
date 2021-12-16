@@ -45,9 +45,11 @@ class App extends Component {
 
   onContactsFilter = () => {
     const { contacts, filter } = this.state;
-    return contacts.filter((contact) =>
-      contact.name.toLowerCase().includes(filter.toLowerCase())
-    );
+    if (filter.includes(filter) || filter === '') {
+      return contacts.filter((contact) =>
+        contact.name.toLowerCase().includes(filter.toLowerCase())
+      );
+    }
   };
 
   onDelete = (contactId) => {
