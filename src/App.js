@@ -45,11 +45,12 @@ class App extends Component {
 
   onContactsFilter = () => {
     const { contacts, filter } = this.state;
-    if (filter.includes(filter) || filter === '') {
-      return contacts.filter((contact) =>
+    if (filter === '') {
+      return contacts
+    }
+    return contacts.filter((contact) =>
         contact.name.toLowerCase().includes(filter.toLowerCase())
       );
-    }
   };
 
   onDelete = (contactId) => {
